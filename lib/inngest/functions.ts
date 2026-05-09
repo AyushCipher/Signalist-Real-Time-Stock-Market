@@ -99,11 +99,11 @@ export const sendDailyNewsSummary = inngest.createFunction(
 						articles = (articles || []).slice(0, 6);
 					}
 					perUser.push({ user, articles });
-				} catch (e) {
+				} catch (error) {
 					console.error(
 						"daily-news: error preparing user news",
 						redactedUserId(user),
-						e,
+						error,
 					);
 					perUser.push({ user, articles: [] });
 				}

@@ -1,0 +1,40 @@
+{
+  "projectName": "signalist",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "framework": "nextjs",
+  "env": [
+    {
+      "key": "NODE_ENV",
+      "value": "production"
+    },
+    {
+      "key": "MONGODB_URI",
+      "value": "@mongodb_uri"
+    },
+    {
+      "key": "BETTER_AUTH_SECRET",
+      "value": "@better_auth_secret"
+    },
+    {
+      "key": "BETTER_AUTH_URL",
+      "value": "@better_auth_url"
+    },
+    {
+      "key": "FINNHUB_API_KEY",
+      "value": "@finnhub_api_key"
+    },
+    {
+      "key": "GEMINI_API_KEY",
+      "value": "@gemini_api_key"
+    },
+    {
+      "key": "NODEMAILER_EMAIL",
+      "value": "@nodemailer_email"
+    },
+    {
+      "key": "NODEMAILER_PASSWORD",
+      "value": "@nodemailer_password"
+    }
+  ]
+}

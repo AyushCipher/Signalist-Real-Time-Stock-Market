@@ -56,6 +56,7 @@ export default function SearchCommand({
 
 	useEffect(() => {
 		debouncedSearch();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [searchTerm]);
 
 	const handleSelectStock = () => {

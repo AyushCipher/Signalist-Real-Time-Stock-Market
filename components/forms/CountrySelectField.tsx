@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Control, Controller, FieldError } from "react-hook-form";
 import {
 	Popover,
@@ -42,13 +43,13 @@ const CountrySelect = ({
 	const countries = countryList().getData();
 
 	const FlagIcon = ({ code }: { code: string }) => (
-		<img
+		<Image
 			src={`https://flagcdn.com/w40/${code.toLowerCase()}.png`}
-			srcSet={`https://flagcdn.com/w80/${code.toLowerCase()}.png 2x`}
 			width={20}
 			height={14}
 			alt={code}
 			className="inline-block rounded-sm"
+			unoptimized
 		/>
 	);
 
